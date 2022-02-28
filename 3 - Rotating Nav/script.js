@@ -1,13 +1,13 @@
-const openNav = document.getElementById('open')
-const closeNav = document.getElementById('close')
+// const openNav = document.getElementById('open')
+// const closeNav = document.getElementById('close')
 
 const container = document.querySelector('.container')
 
 container.addEventListener('click', (e) =>{
-    if(e.target.id === "open"){
+    if(e.target.parentNode.id === "open"){
         container.classList.add('show-nav')
     }
-    if(e.target.id === "close"){
+    if(e.target.parentNode.id === "close"){
         container.classList.remove('show-nav')
     }
 })
