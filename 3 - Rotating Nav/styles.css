@@ -1,0 +1,133 @@
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #333;
+    color #222;
+
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.container{
+    background-color: #fafafa;
+    transform-origin: top left;
+    transition: .5s linear;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 3.125rem;
+}
+
+.container.show-nav{
+    transform: rotate(-20deg);
+}
+
+.container.show-nav .circle{
+    transform: rotate(-70deg);
+}
+
+.circle-container{
+    position: fixed;
+    top: -6.25rem;
+    left: -6.25rem;
+}
+
+.circle{
+    background-color: #ff7979;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position:relative;
+    transition: 0.5s linear;
+}
+
+.circle button{
+    position:absolute;
+    top:50%;
+    left:50%;
+    height: 6.25rem;
+    background:transparent;
+    border:0;
+    font-size: 1.8rem;
+    color: #ffff;
+    cursor: pointer;
+}
+
+.circle button#open{
+    left: 60%;
+}
+
+.circle button#close{
+    top: 60%;
+    transform:rotate(90deg);
+    transform-origin: top left;
+}
+
+.circle button:focus{
+    outline: none;
+}
+
+.container.show-nav + nav li{
+    transform: translateX(0);
+    transition-delay: 0.3s;
+}
+
+nav{
+    position: fixed;
+    bottom: 2.5rem;
+    left: 0;
+    z-index: 100;
+}
+
+nav ul{
+    list-style-type: none;
+    padding-left: 1.875;
+}
+
+nav ul li{
+    text-transform: uppercase;
+    color: #ffff;
+    margin: 2.5rem auto;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in;
+}
+
+nav ul li i{
+    font-size: 1.25rem;
+    margin-right: .625rem;
+}
+
+nav ul li + li{
+    margin-left: .9375rem;
+    transform: translateX(-150%);
+}
+
+nav ul li + li + li {
+    margin-left: 1.875rem;
+    transform: translateX(-200%);
+}
+
+.content{
+    max-width: 62.5rem;
+    margin: 3.25rem auto;
+}
+
+.content h1{
+    margin: 0;
+}
+
+.content small{
+    color: #555;
+}
+
+.content p{
+    color: #333;
+    line-height: 1.5;
+}
+
