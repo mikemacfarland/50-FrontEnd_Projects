@@ -1,0 +1,71 @@
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-evenly;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    letter-spacing: .12rem;
+}
+
+a{
+    text-decoration: none;
+    color: #ffff;
+    font-weight: 600;
+    font-size: .75rem;
+    border: solid .15rem #ffff;
+    padding: .5rem;
+    margin: auto;
+    border-radius: 5%;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: auto;
+    margin: auto;
+    width: 50%;
+    justify-content: center;
+    transition: .5s linear;
+}
+
+.container h2{
+    text-align: center;
+    font-size: 1rem;
+    color: #ffff;
+    font-size: 2.5rem;
+}
+
+.ps5.container{
+    height: 100%;
+    background: url(img/ps5.webp) center ;
+    background-size: ; 
+}
+
+.xbox.container{
+    height: 100%;
+    background: url(img/xbox.webp) center;
+    background-size: auto;
+}
+
+.active{
+    width: 90%;
+    transition: .5s linear;
+}
+
+.overlay{
+    display: flex;
+    flex-direction: column;
+    color: #ffff;
+}
