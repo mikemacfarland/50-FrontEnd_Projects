@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+:root{
+    --overlay-bg-color: #afafaff3;
+}
+
 body {
     font-family: 'roboto', sans-serif;
     display: flex;
@@ -19,53 +23,76 @@ body {
 }
 
 a{
+    text-transform: uppercase;
     text-decoration: none;
     color: #ffff;
     font-weight: 600;
     font-size: .75rem;
     border: solid .15rem #ffff;
     padding: .5rem;
-    margin: auto;
+    margin: 0 auto auto auto;
     border-radius: 5%;
+    transition: .2s;
+}
+
+/* add link hover styling */
+a:hover{
+    background: var(--overlay-bg-color);
+    transition: .1s;
+}
+
+a:active{
+    background: #ffffff90;
 }
 
 .container{
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: auto;
-    margin: auto;
     width: 50%;
     justify-content: center;
     transition: .5s linear;
+    background-blend-mode: overlay;
 }
 
-.container h2{
+.container h1{
     text-align: center;
-    font-size: 1rem;
     color: #ffff;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
+    margin-top: auto;
 }
 
-.ps5.container{
-    height: 100%;
-    background: url(img/ps5.webp) center ;
-    background-size: ; 
+.left.container{
+    height: 100vh;
+    background: url(img/ps5.png) center, var(--overlay-bg-color) ;
+    background-size: cover;
 }
 
-.xbox.container{
-    height: 100%;
-    background: url(img/xbox.webp) center;
-    background-size: auto;
+.right.container{
+    height: 100vh;
+    background: url(img/Xbox.jpg) center, var(--overlay-bg-color);
+    background-size: cover;
 }
 
-.active{
+/* transitions using css hover selector 
+easier way to acomplish effect*/
+.container:hover{
+    width:90%;
+    background-blend-mode:normal;
+    transition: .5s ease;
+}
+
+/* transitions using javascript */
+/* .active{
     width: 90%;
-    transition: .5s linear;
-}
+    transition: .5s ease;
+} */
 
-.overlay{
-    display: flex;
-    flex-direction: column;
-    color: #ffff;
+@media(max-width: 800px) {
+    h1{
+        font-size: ;
+    }
+
+    a{
+
+    }
 }
