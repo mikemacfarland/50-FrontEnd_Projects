@@ -101,6 +101,7 @@ main{
 
 .overview{
     background-color: #ffff;
+    color: var(--secondary-color);
     padding: 2rem;
     position: absolute;
     top: 50px;
