@@ -1,8 +1,6 @@
 const arrows = document.querySelectorAll('.arrow')
 const slides = document.querySelectorAll('.slide')
 const body = document.querySelector('body')
-
-
 let activeSlide = 0
 
 setBgToBody()
@@ -36,25 +34,3 @@ arrows.forEach(arrow => {
         }
     })
 })
-
-// arrows.forEach(arrow =>{
-//     arrow.addEventListener('click', (e) =>{
-//         if(e.target.classList.contains('right-arrow') || e.target.parentNode.classList.contains('right-arrow')){
-//             nextSlide()
-//         }
-//         if(e.target.classList.contains('left-arrow') || e.target.parentNode.classList.contains('left-arrow')){
-//             // previousSlide()
-//         }
-//     })
-// })
-
-// function nextSlide(){
-//     slides.forEach((slide,i) => {
-//         if(slide.classList.contains('active')){
-//             nextBackground = slides[i+1].style.backgroundImage
-//             body.style.background = nextBackground
-//             slide.classList.remove('active')
-//             slide
-//         }
-//     })
-// }
