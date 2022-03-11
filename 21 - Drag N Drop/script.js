@@ -14,11 +14,13 @@ for(const empty of empties) {
 // DRAG functions
 function dragStart(){
     console.log('drag start')
+    // This "empty" element from nodelist "empties"
     this.className += ' hold'
     setTimeout(() => this.className = 'invisible',10)
 }
 
 function dragEnd(){
+    // This "empty" element from nodelist "empties"
     this.className = 'fill'
     console.log('drag end')
 }
@@ -32,16 +34,19 @@ function dragOver(e){
 
 function dragEnter(e){
     e.preventDefault()
+    // This "empty" element from nodelist "empties"
     this.className += ' hovered'
     console.log('drag enter')
 }
 
 function dragLeave(){
+    // This "empty" element from nodelist "empties"
     this.className = "empty"
     console.log('drag leave')
 }
 
 function dragDrop(){
+    // This "empty" element from nodelist "empties"
     this.className = 'empty'
     this.append(fill)
     console.log('drag drop')
