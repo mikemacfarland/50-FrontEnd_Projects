@@ -4,15 +4,18 @@ const toasts = document.getElementById('toasts')
 const emptySpan = document.createElement('span')
 
 const messages =[
-    'message 1','message 2','message 3','message 4'
+    'Hello There','This will dissapear','Javascript is cool','This is a notification'
 ]
 
 button.addEventListener('click', () => showToast())
 
+
+//this could easily be split into another function that pulls in specified messages based on logic(instead of unrealistic random messages)
 function showToast(){
-    toastEl = document.createElement('div')
+    // DEFINE new div element inside function (otherwise it will try to define the one that has already been used)
+    toastEl = document.createElement('div') 
     toastEl.classList.add('toast')
-    toastEl.innerText = (messages[Math.floor(Math.random() * messages.length)]).toString()
+    toastEl.innerText = (messages[Math.floor(Math.random() * messages.length)])
     // ADD toast to toasts div
     if(toasts.hasChildNodes()){
         console.log('haschildren')
@@ -22,7 +25,7 @@ function showToast(){
         toasts.appendChild(toastEl)
     }
     // REMOVE last child element after 5 seconds
-    setTimeout(() => toasts.lastChild.remove(),5000)
+    setTimeout(() => toasts.lastChild.remove(),6000)
 }
     
 
