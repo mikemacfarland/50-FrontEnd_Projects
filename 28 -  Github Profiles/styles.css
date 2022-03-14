@@ -6,8 +6,13 @@
     box-sizing: border-box;
 }
 
+:root{
+    --primary-color: slateblue;
+    --secondary-color:#4c2885;
+}
+
 body {
-    background-color: slateblue;
+    background-color: var(--primary-color);
     color: white;
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -27,7 +32,7 @@ body {
 .user-form input{
     width: 100%;
     display: block;
-    background-color: #4c2885;
+    background-color: var(--secondary-color);
     border: none;
     border-radius: 7px;
     color: white;
@@ -48,7 +53,7 @@ body {
 
 .card{
     max-width: 800px;
-    background-color: #4c2885;
+    background-color: var(--secondary-color);
     border-radius: 20px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, .5);
     display: flex;
@@ -56,11 +61,16 @@ body {
     margin: 0 1.5rem;
 }
 
+.error.card h2{
+    /* padding: 1rem 1rem; */
+}
+
 .avatar{
     border-radius: 50%;
-    border: 10px solid #2a2a72;
+    border: 10px solid var(--primary-color);
     height: 150px;
     width: 150px;
+    cursor: pointer;
 }
 
 .user-info{
@@ -86,12 +96,32 @@ body {
 .user-info ul li strong{
     font-size: .9rem;
     margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+#repos{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+#repos .error.card{
+    background-color: var(--primary-color);
+    border-radius: 3px;
+    padding: .7rem 1rem;
+    font-size: .7rem;
+}
+
+.error.card h2{
+    margin: 0;
 }
 
 .repo{
+    display: inline-block;
     text-decoration: none;
     color: white;
-    background-color: slateblue;
+    background-color: var(--primary-color);
     font-size: .7rem;
     padding: .5rem;
     margin-right: .5rem;
@@ -99,6 +129,12 @@ body {
     border-radius: 3px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, .6);
     cursor: pointer;
+}
+
+.repo:active{
+    color: var(--secondary-color);
+    transform: scale(.95);
+    transition: .1s linear;
 }
 
 @media (max-width: 720px){
