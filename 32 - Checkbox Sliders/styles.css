@@ -1,0 +1,94 @@
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+    font-family: 'roboto', sans-serif;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.project-stats{
+    font-size: 1.5rem;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-stats legend{
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.option{
+    display: flex;
+    justify-content: flex-start;
+    justify-items: center;
+    margin: .375rem 0;
+}
+
+.option label{
+    padding-top: .25rem;
+    margin-left: 3rem ; 
+}
+
+.option input{
+    position: relative;
+    margin-left: 35%;
+    height: 2rem;
+}
+
+.option input::before{
+    position: absolute;
+    display: inline-block;
+    content: '';
+    transform: translateX(-35px);
+    background-color: rgb(145, 145, 145);
+    width: 70px;
+    height: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .6);
+    transition: all .5s ease;
+}
+
+.option input::after{ 
+    position: absolute;
+    display: inline-block;
+    transform: translateX(-35px);
+    top: 1.6px;
+    left: 1px;
+    content: '';
+    background-color: rgb(156, 156, 156);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    z-index: 10;
+    border: rgb(127, 191, 255) 2px solid;
+    transition: all .5s ease;
+}
+
+.option input:checked::before{
+    background-color: lightgrey;
+    transition: all .5s ease;
+}
+
+.option input:checked::after{
+    transition: all .5s ease;
+    left: 38px;
+}
+
+
+
+
+
