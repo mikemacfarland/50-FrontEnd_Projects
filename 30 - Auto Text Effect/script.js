@@ -24,6 +24,3 @@ buttons.forEach(button => button.addEventListener('click', (e) =>{
         speed = 100/speedEl.innerHTML
     }
 }))
-
-
-// this needs a map function to match both the interval speed and the timeout speed
