@@ -1,0 +1,67 @@
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+    font-family: 'roboto', sans-serif;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-between;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.phrase{
+    margin-top:45vh;
+}
+
+.controls{
+    background-color: lightgray;
+    margin-top: auto;
+    margin-bottom: 2.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .5);
+}
+
+.controls strong{
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    
+}
+
+.controls button{
+    border: none;
+    margin: .5rem;
+}
+
+.up{
+    border-radius: 4px 0 0 4px;
+}
+
+.down{
+    border-radius: 0 4px 4px 0;
+}
+
+.controls button:focus{
+    outline: none;
+}
+
+.controls button:active{
+    background-color: lightcoral;
+}
+
+.controls button i{
+    font-size: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+
