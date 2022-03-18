@@ -34,6 +34,7 @@ function createNote(text = ''){
         storeNotes()
     })
 
+    //Add text area focus events for editing as well
     editBtn.addEventListener('click', () =>{
         main.classList.toggle('hidden')
         textArea.classList.toggle('hidden')
@@ -58,13 +59,12 @@ function moveNote(item){
         isDown = true
         isUp = false
 
-        // may need for each loop selecting notes and setting them to z-index 0 unless they are the selected note
+        // need for each loop selecting notes and setting them to z-index 0 unless they are the selected note
         if(e.target.classList.contains('controls')){
             item.style.transform = `translate(-${e.offsetX}px,-${e.offsetY}px)`
             item.style.left = `${e.clientX}px`
             item.style.top = `${e.clientY}px`
 
-            //may need function locking move into div element, it jumps out when moving too fast
             //Mouse move setting
             item.addEventListener('mousemove', (e) =>{
                 if(isDown === true && isUp === false && e.target.classList.contains('controls')){
@@ -85,6 +85,9 @@ function moveNote(item){
     })
 }
 
+
+//TODO add local storage to this project
+//see lines 14 throuth 18 for properties needed to store and access
 function storeNotes(){
     let notes = document.querySelectorAll('.note')
 
