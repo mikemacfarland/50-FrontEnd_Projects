@@ -1,0 +1,90 @@
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:rgb(74, 228, 74);
+    --note-width:200px;
+    --note-height: 200px;
+}
+
+body {
+    background-color: rgb(127, 193, 255);
+    position: absolute;
+    font-family: 'roboto', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+}
+
+.add-note{
+    margin: 1rem 1rem 0 auto;
+    display: block;
+    padding: .5rem;
+    font-size: 1.2rem;
+    background-color: var(--primary-color);
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.add-note:active{
+    transform: scale(.98);
+}
+
+.fa-plus{
+    margin-right: .5rem;
+}
+
+.note{
+    position: absolute;
+    top: 20px;
+    left: 20px; 
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+}
+
+#note{
+    padding: .5rem;
+    min-width: 120px;
+    min-height: 120px;
+    width: var(--note-width);
+    height: var(--note-height);
+    font-size: 1rem;
+}
+
+.controls{
+    background-color: var(--primary-color);
+    display: inherit;
+    flex-direction: row;
+    justify-content: flex-end;
+    cursor: grab;
+
+}
+
+.controls button{
+    color: white;
+    background-color: transparent;
+    border: none;
+    margin:.25rem 0;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+.main{
+    padding: .5rem;
+    background-color: white;
+    width: var(--note-width);
+    height: var(--note-height);
+}
