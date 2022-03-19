@@ -9,10 +9,11 @@ runAnimation()
 function resetDOM(){
     counter.classList.remove('hide')
     final.classList.remove('show')
+
     numbers.forEach((num) =>{
         num.classList.value = ''
-        num[0].classList.add('in')
     })
+    numbers[0].classList.add('in')
 }
 
 function runAnimation(){
