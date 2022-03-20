@@ -1,0 +1,51 @@
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(235, 235, 235);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    align-items: flex-start; 
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.filter{
+    background-color: rgb(182, 207, 216);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 90%;
+    height: 3rem;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .5),0 2px 2px lightblue;
+}
+
+#search{
+    font: inherit;
+    height: 1.8rem;
+    margin: auto 2rem;
+    border: none;
+    border-radius: 5px;
+    padding-left: 1rem;
+    background-color: rgb(150, 150, 150);
+}
+
+#search::placeholder{
+    color: white;
+}
+
+/* #filter{
+    background: ;
+} */
+
