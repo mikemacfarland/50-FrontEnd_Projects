@@ -1,0 +1,143 @@
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: flex-start;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    margin: 0;
+    z-index: 1;
+}
+
+h1{
+    margin: auto auto;
+}
+
+/* nav button styles */
+#open-nav{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: white;
+    font-size: 1.75rem;
+    border: none;
+    cursor: pointer;
+}
+
+#close-nav{
+    font-size: 1.1rem;
+    position: fixed;
+    background-color: #0000002a;
+    color: white;
+    z-index: 3;
+    width: 1.5rem;
+    height: 1.5rem;
+    right: 20px;
+    top: 20px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 0px 4px black;
+    cursor: pointer;
+}
+
+#close-nav:active{
+    transform: scale(.98);
+}
+
+/* nav popout background styles */
+header.active,
+header.active::before,
+header.active::after{
+    transform: translateX(0px);
+}
+
+header.active{
+    transition: all .99s ease;
+}
+.header-bg.white.active{
+    transform: translateX(0);
+    transition: all .66s ease;
+}
+.header-bg.green.active{
+    transform: translateX(0);
+    transition: all .33s ease;
+}
+
+/* 1st background */
+header{
+    color: white;
+    position: fixed;
+    background-color: #004e36;
+    height: 100vh;
+    width: 280px;
+    top: 0;
+    left: 0;
+    border-radius: 0 15px 15px 0;
+    transform: translateX(-280px);
+    transition: all .33s ease;
+    z-index: 2;
+}
+
+/* 2nd background */
+.header-bg.white{
+    position: fixed;
+    background-color: white;
+    width: 300px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 0 10px 10px 0;
+    transform: translateX(-300px);
+    transition: all .66s ease;
+}
+
+/* 3rd background */
+.header-bg.green{
+    position: fixed;
+    background-color: #339f52;
+    width: 320px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    border-radius: 0 5px 5px 0;
+    transform: translateX(-320px);
+    transition: all .99s ease;
+}
+
+/* nav styles */
+nav{
+    width: 300px;
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
+
+nav a{
+    letter-spacing: .04rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+nav a:hover{
+    color: rgb(231, 226, 219);
+}
+
+nav li{
+    margin: .8rem 0;
+}
+
