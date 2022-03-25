@@ -1,6 +1,6 @@
 
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
 
 *{
     box-sizing: border-box;
@@ -11,7 +11,7 @@
 }
 
 body {
-    font-family: 'roboto', sans-serif;
+    font-family: 'Muli', sans-serif;
     display: flex;
     flex-direction: row; 
     align-items: center; 
@@ -120,10 +120,19 @@ header{
     transition: all .99s ease;
 }
 
+.nav-logo{
+    width: 160px;
+    margin: 40px 60px 0  60px;
+}
+.nav-logo img{
+    width:100%;
+    
+}
+
 /* nav styles */
 nav{
     width: 300px;
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-left: 2rem;
 }
 
