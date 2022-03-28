@@ -1,0 +1,75 @@
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    background: linear-gradient(52deg, rgba(255,255,255,1) 0%, rgba(214,250,255,1) 52%, rgba(133,133,133,1) 100%);
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.quiz{
+    background-color: white;
+    display: inherit;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+    height: fit-content;
+    margin: auto auto;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#question{
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    margin: 3rem 2rem 2rem 2rem;
+}
+
+.quiz small{
+    font-size: .9rem;
+    margin: -10px auto;
+}
+
+#answers{
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: auto 3rem;
+}
+
+#submit{
+    background-color: rgb(165, 0, 165);
+    color: white;
+    margin-top: 2rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    border: none;
+}
+
+#submit:active{
+    color: lightgrey;
+}
+
+.answer{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.answer label{
+    margin-left: .6rem;
+}
+
+

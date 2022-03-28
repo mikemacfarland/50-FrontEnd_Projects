@@ -1,0 +1,38 @@
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start;
+    height: 100vh;
+    overflow-y: scroll;
+    margin: 0;
+}
+
+h1{
+    margin: 3rem auto;
+}
+
+.image-container{
+    display: inherit;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50vw;
+    padding-bottom: 3rem;
+}
+
+img{
+    width: 240px;
+    height: 240px;
+    margin: .7rem;
+    padding: .7rem;
+}

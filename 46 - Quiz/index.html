@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" /> -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="quiz">
+        <h2 id="question">Get ready to take a short quiz!</h2>
+        <small>There are <strong id="count"></strong> questions in this quiz</small>
+        <div id="answers">
+            <div class="answer">
+                <input type="radio" name="answer" id="a">
+                <label for="a" id="a_text">a</label>
+            </div>
+            <div class="answer">
+                <input type="radio" name="answer" id="b">
+                <label for="b" id="b_text">b</label>
+            </div>  
+            <div class="answer">
+                <input type="radio" name="answer" id="c">
+                <label for="c" id="c_text">c</label>
+            </div>   
+            <div class="answer">
+                <input type="radio" name="answer" id="d">
+                <label for="d" id="d_text">d</label>
+            </div> 
+        </div>
+        <input type="submit" id="submit" value="Start the quiz">
+    </div>
+</body>
+</html>
