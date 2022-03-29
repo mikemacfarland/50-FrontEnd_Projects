@@ -59,5 +59,3 @@ function updateLS(){
     
     localStorage.setItem('items', JSON.stringify(listItems))
 }
-
-
