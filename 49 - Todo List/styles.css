@@ -1,0 +1,78 @@
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightgray;
+    font-family: 'roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+h1{
+    color: rgba(128, 0, 128, 0.39);
+    font-size: 6rem;
+    margin-top: 4rem;
+    margin-bottom: 0;
+}
+
+.todo-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: fit-content;
+    box-shadow: 0 2px 10px rgba(0, 0, 0 .5);
+}
+
+.todo-container input{
+    font-size: 1.2rem;
+    width: 20rem;
+    height: 3rem;
+    border: none;
+    padding-left: 1rem;
+}
+
+.todo-container input:focus{
+    outline: none;
+}
+
+.todo-container .item{
+    font-size: 1.2rem;
+    display: block;
+    width: 100%;
+    background-color: white;
+    height: 2.2rem;
+    margin-top: 5px;
+    padding-left: .5rem;
+    padding-top: calc((2rem - 1.2rem) / 2);
+    transition: .4s ease all;
+    cursor: pointer;
+}
+
+.todo-container .item:hover{
+    background-color: bisque;
+    transition: .4s ease all;
+    
+}
+
+.item.line-through{
+    text-decoration: line-through;
+    color: rgb(119, 119, 119);
+}
+
+small{
+    margin-top: 2rem;
+    text-align: center;
+    color: rgb(119, 119, 119);
+}
